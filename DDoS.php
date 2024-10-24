@@ -6,7 +6,7 @@ if(!isset($_SESSION["MAX_REQUEST"])){
   $_SESSION["MAX_TIME"] = 50;
 }
 if(!isset($_COOKIE["BLOCK_REQUEST"]) && time() - $_SESSION["MAX_TIME"] <= 500]){
-   if($_SESSION["REQUESTS_SENT"] <= $_SESSION["MAX_REQUEST"])){
+   if($_SESSION["REQUESTS_SENT"] <= $_SESSION["MAX_REQUEST"]){
        $_SESSION["REQUEST_SENT"]++;
    }else{
      http_response_code(403);
