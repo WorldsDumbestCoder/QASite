@@ -7,7 +7,7 @@
         "title" => $question_title,
         "username" => null,
       );
-      $newURL = http_build_query("upload.php?" . $url);
+      $newURL = http_build_query("view.php?" . $url);
     }
   }else{
     die("Request Method Not Allowed");
