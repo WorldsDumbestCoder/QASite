@@ -5,7 +5,7 @@ if(!isset($_SESSION["MAX_REQUEST"])){
   $_SESSION["REQUESTS_SENT"] = 0;
   $_SESSION["MAX_TIME"] = 50;
 }
-if(!isset($_COOKIE["BLOCK_REQUEST"] && time() - $_SESSION["MAX_TIME"] <= 500])){
+if(!isset($_COOKIE["BLOCK_REQUEST"]) && time() - $_SESSION["MAX_TIME"] <= 500]){
    if($_SESSION["REQUESTS_SENT"] <= $_SESSION["MAX_REQUEST"])){
        $_SESSION["REQUEST_SENT"]++;
    }else{
